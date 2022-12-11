@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function randomInt(){
+            return Math.floor(Math.random()*9+1);
+        }
+        function addAnswer(obj){
+            let arr = document.getElementsByTagName("p");
+            if(obj.innerHTML === "답"){
+                let idx=arr[parseInt(obj.id)].innerHTML.indexOf("=");
+                obj.innerHTML= eval(arr[parseInt(obj.id)].innerHTML.substr(0,idx));
+            }
+            else{
+                obj.innerHTML="답"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>정답의 동적 삽입</h3>
+    <hr>
+    <div><p>2 + 4 = <span id="0" onclick="addAnswer(this)">답</span></p>
+    <div><p>4 * 20 + 64 = <span id="1" onclick="addAnswer(this)">답</span></p>
+    <div><p>20 / 5 - 8 * 2 = <span id="2" onclick="addAnswer(this)">답</span></p>
+</body>
+</html>

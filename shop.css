@@ -1,0 +1,109 @@
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#262069;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+img{
+    margin: 0;
+    height:100%;
+}
+body {
+    top: 65px;
+    left: 0;
+    right: 0;
+    height: auto;
+    background: linear-gradient(red,blue);
+}
+.benner{
+    top: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+.line{
+    position:absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    text-align: center;
+    padding:5px;
+    background-color: #FDC52C;
+    z-index:0;
+}
+.items-list{
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-wrap: nowrap;
+    overflow-x:scroll;
+    background-color: white;
+    padding: 10px;
+}
+.items-list::-webkit-scrollbar {
+    width: 3px;
+  }
+  .items-list::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+  }
+  .items-list::-webkit-scrollbar-track {
+    border-radius: 10px;
+    /* box-shadow: inset 0px 0px 5px white; */
+  }
+ .item{
+    width: 250px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    list-style:none;
+    margin-top: auto;
+}
+.item-name{
+    flex:1;
+    list-style:none;
+    text-align: center;
+    margin-top:5px;
+    margin-bottom: 4px;
+}
+
+/* .item:after {
+    content:"";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  /* Hover state - trigger effect */
+  /* .item:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  } */
+  /* Active state */
+  
+  /* .item:active:after {
+    opacity: 0;
+  } */

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  margin: 0;
+}
+
+input, button, select, fieldset, textarea {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:0;
+    background-color:transparent;
+}
+
+.swiper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #323540;
+}
+
+.swiper-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-navi {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  opacity: 0.4;
+  transition: 0.1s;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.swiper-navi:hover,
+.swiper-navi:focus {
+  opacity: 1;
+}
+
+.swiper-navi.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.swiper-prev {
+  left: -75px;
+}
+
+.swiper-next {
+  right: -75px;
+}
+
+.btn-text {display:block;}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #e53123;
+  box-shadow: 3px 3px 5px #222;
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.swiper {
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 5px #222;
+}
+
+.swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+}

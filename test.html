@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- XEIcon 폰트 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+
+    <!-- 콘텐츠 시작 -->
+    <div class="swiper-container">
+      <div class="swiper-inner">
+        <!-- navigation - 좌우 이동버튼(좌) -->
+        <button type="button" class="swiper-prev swiper-navi">
+          <i class="xi-long-arrow-left"></i>
+          <span class="btn-text"></span>
+        </button>
+
+        <!-- 슬라이더 -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" data-swiper-title="Slide 1">Slide 1</div>
+            <div class="swiper-slide" data-swiper-title="Slide 2">Slide 2</div>
+            <div class="swiper-slide" data-swiper-title="Slide 3">Slide 3</div>
+            <div class="swiper-slide" data-swiper-title="Slide 4">Slide 4</div>
+            <div class="swiper-slide" data-swiper-title="Slide 5">Slide 5</div>
+          </div>
+        </div>
+
+        <!-- navigation - 좌우 이동버튼(우) -->
+        <button type="button" class="swiper-next swiper-navi">
+          <i class="xi-long-arrow-right"></i>
+          <span class="btn-text"></span>
+        </button>
+      </div>
+
+      <!-- pagination - 페이지 버튼 -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </body>
+</html>
